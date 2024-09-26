@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Style/Styles.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="Form">
+        <form onsubmit="Submit(event)">
+            <table>
+                <tr >
+                    <td id="head" colspan="2" style="color: white ;text-align: center;"><h1>Personal Information Form</h1></td>
+                </tr>
+                <tr>
+                    <td style="color: white ; text-align: center;">Name</td>
+                    <td id="td2">
+                        <input type="text" id="name" placeholder="Enter your Name Here..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: white ;text-align: center;">Password</td>
+                    <td id="td2">
+<input type="password" id="password" placeholder="Enter Your Password..."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: white ;text-align: center;">Gender</td>
+                    <td id="td2" style="color: white ;">
+                     Male <input type="radio" value="male" name="gender"/>
+                     FeMale <input type="radio" value="female" name="gender"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: white ;text-align: center;">Education</td>
+                    <td id="td2">
+                    <select id="education">
+                        <option value="BCS">BCS</option>
+                        <option value="BIT">BIT</option>
+                        <option value="BBA">BBA</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: white ;text-align: center;">Hobbies</td>
+                    <td id="td2"style="color: white ;">
+                        Watching TV<input type="checkbox" name="hobbies" value="Watching TV"/>
+                        Reading<input type="checkbox" name="hobbies" value="Reading"/>
+                        Football<input type="checkbox" name="hobbies" value="Football"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: white ; text-align: center;">Comment</td>
+                    <td id="td2">
+                        <textarea id="comment" cols="45" row="5">
+Your Comments Is Here...
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit"> Submit </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="Form">
+        <table>
+            <tr>
+                <td style="color: white ;text-align: center;" id="nameResult"></td>
+            </tr>
+            <tr>
+                <td style="color: white ;text-align: center;" id="passwordResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: white ;text-align: center;" id="genderResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: white ;text-align: center;" id="hobbiesResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: white ;text-align: center;" id="educationResult"> </td>
+            </tr>
+            <tr>
+                <td style="color: white ;text-align: center;" id="commentResult"> </td>
+            </tr>
+        </table>
+            </div>
+</div>
+
+
+<script src="./Style/js/functionality.js"></script>
+</body>
+</html>
